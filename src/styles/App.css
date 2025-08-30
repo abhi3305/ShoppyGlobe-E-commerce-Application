@@ -1,0 +1,88 @@
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Hero Section for Home */
+.hero-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+.hero-section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.hero-section img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.hero-section .btn-primary {
+  background-color: #28a745;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.hero-section .btn-primary:hover {
+  background-color: #218838;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 30px;
+  }
+
+  .hero-section h2 {
+    font-size: 24px;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+  }
+}
