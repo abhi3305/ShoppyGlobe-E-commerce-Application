@@ -1,11 +1,13 @@
 // src/components/ProductList.jsx
-import React, { useState } from "react";
-import mockData from "../utils/mockData"; // Importing the mock data
+import useProducts from "../hooks/useProducts";
 import ProductItem from "./ProductItem";
 import "../styles/ProductList.css";
 
 const ProductList = () => {
-  const [products] = useState(mockData); // Using mock data as the product list
+  const { products, loading, error } = useProducts();
+
+  if (loading) return <p>Loading products...</p>;
+  if (error) return <p>{error}</p>;
 
   return (
     <div className="product-list-container">
