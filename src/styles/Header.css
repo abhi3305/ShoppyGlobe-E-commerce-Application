@@ -1,0 +1,83 @@
+/* src/components/Header.css */
+header {
+  background-color: #343a40;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 50px;
+}
+
+header .logo a {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  padding-right: 35em;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+  margin-right: 30px;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  color: #28a745;
+}
+
+.search-form {
+  display: flex;
+  gap: 0px;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-btn {
+  padding: 8.5px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 0px 5px 5px 0px ;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: rgb(255, 210, 10);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide links on small screens */
+  }
+
+  .search-form {
+    margin-left: auto;
+  }
+
+  .search-bar {
+    width: 150px;
+  }
+}
