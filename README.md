@@ -170,3 +170,7 @@ Use ThunderClient or Postman to test all backend routes.
 Ensure error handling works by sending invalid IDs or missing JWT.
 
 Take screenshots for submission.
+
+## Project Repository
+
+Check out the project on GitHub: [ShoppyGlobe E-commerce Application](https://github.com/abhi3305/ShoppyGlobe-E-commerce-Application)
